@@ -5,8 +5,8 @@
  */
 package machine.interfaces;
 
+import java.util.ArrayList;
 import machine.product.Product;
-import java.util.List;
 
 /**
  *
@@ -27,5 +27,5 @@ public interface IMachine {
    * @param decorationActions the value of decorationActions
    */
   public void setProcess(
-          List<Integer> flavorActions, List<Integer> sauceActions, List<Integer> decorationActions);
+          ArrayList<Integer> flavorActions, ArrayList<Integer> sauceActions, ArrayList<Integer> decorationActions);
 }

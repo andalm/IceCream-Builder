@@ -5,7 +5,7 @@
  */
 package machine.mold;
 
-import java.util.List;
+import java.util.ArrayList;
 import machine.Machine;
 import machine.product.*;
 
@@ -31,7 +31,7 @@ public class CupMold extends Machine{
   }
 
   @Override
-  public void setProcess(List<Integer> flavorActions, List<Integer> sauceActions, List<Integer> decorationActions) {
+  public void setProcess(ArrayList<Integer> flavorActions, ArrayList<Integer> sauceActions, ArrayList<Integer> decorationActions) {
     super.setFlavorActions(flavorActions);
     super.setSauceActions(sauceActions);
     super.setDecorationActions(decorationActions);

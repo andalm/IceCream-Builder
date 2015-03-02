@@ -5,7 +5,7 @@
  */
 package machine.mold;
 
-import java.util.List;
+import java.util.ArrayList;
 import machine.Machine;
 import machine.product.*;
 
@@ -30,8 +30,14 @@ public class GlassMold extends Machine{
     return product;
   }
 
+  /**
+   *
+   * @param flavorActions the value of flavorActions
+   * @param sauceActions the value of sauceActions
+   * @param decorationActions the value of decorationActions
+   */
   @Override
-  public void setProcess(List<Integer> flavorActions, List<Integer> sauceActions, List<Integer> decorationActions) {
+  public void setProcess(ArrayList<Integer> flavorActions, ArrayList<Integer> sauceActions, ArrayList<Integer> decorationActions) {
     super.setFlavorActions(flavorActions);
     super.setSauceActions(sauceActions);
     super.setDecorationActions(decorationActions);

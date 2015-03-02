@@ -5,7 +5,7 @@
  */
 package machine.product;
 
-import java.util.List;
+import java.util.ArrayList;
 
 /**
  *
@@ -13,9 +13,9 @@ import java.util.List;
  */
 public abstract class Product {
   private String name;
-  private List<String> flavors;
-  private List<String> sauces;
-  private List<String> decorations;
+  private ArrayList<String> flavors = new ArrayList<>();
+  private ArrayList<String> sauces = new ArrayList<>();
+  private ArrayList<String> decorations = new ArrayList<>();
 
   /**
    * @return the name
@@ -74,5 +74,17 @@ public abstract class Product {
    */
   public void setDecoration(String decoration) {
     this.decorations.add(decoration);
+  }
+  
+  public int getCountFlavors(){
+    return flavors.size();
+  }
+  
+  public int getCountSauces(){
+    return sauces.size();
+  }
+  
+  public int getCountDecorations(){
+    return decorations.size();
   }
 }

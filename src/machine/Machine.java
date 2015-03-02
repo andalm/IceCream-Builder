@@ -5,7 +5,7 @@
  */
 package machine;
 
-import java.util.List;
+import java.util.ArrayList;
 import machine.interfaces.IMachine;
 
 /**
@@ -13,49 +13,49 @@ import machine.interfaces.IMachine;
  * @author Adam
  */
 public abstract class Machine implements IMachine{
-  private List<Integer> flavorActions;
-  private List<Integer> sauceActions;
-  private List<Integer> decorationActions;
+  private ArrayList<Integer> flavorActions;
+  private ArrayList<Integer> sauceActions;
+  private ArrayList<Integer> decorationActions;
 
   /**
    * @return the flavorActions
    */
-  public List<Integer> getFlavorActions() {
+  public ArrayList<Integer> getFlavorActions() {
     return flavorActions;
   }
 
   /**
    * @return the sauceActions
    */
-  public List<Integer> getSauceActions() {
+  public ArrayList<Integer> getSauceActions() {
     return sauceActions;
   }
 
   /**
    * @return the decorationActions
    */
-  public List<Integer> getDecorationActions() {
+  public ArrayList<Integer> getDecorationActions() {
     return decorationActions;
   }
 
   /**
    * @param flavorActions the flavorActions to set
    */
-  protected void setFlavorActions(List<Integer> flavorActions) {
+  protected void setFlavorActions(ArrayList<Integer> flavorActions) {
     this.flavorActions = flavorActions;
   }
 
   /**
    * @param sauceActions the sauceActions to set
    */
-  protected void setSauceActions(List<Integer> sauceActions) {
+  protected void setSauceActions(ArrayList<Integer> sauceActions) {
     this.sauceActions = sauceActions;
   }
 
   /**
    * @param decorationActions the decorationActions to set
    */
-  protected void setDecorationActions(List<Integer> decorationActions) {
+  protected void setDecorationActions(ArrayList<Integer> decorationActions) {
     this.decorationActions = decorationActions;
   }
 }
