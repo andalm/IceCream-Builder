@@ -66,7 +66,7 @@ public class Client {
     do
     {
       System.out.println("Choose flavors for add at your icecream machine:\n1. Chocolate\n2. Blackberry\n"
-              + "3. Soursop\n4. Strawberry\n0. Salir");
+              + "3. Soursop\n4. Strawberry\n0. Exit");
       opt = sc.nextInt();
       switch(opt){
         case 1: 
@@ -93,7 +93,7 @@ public class Client {
     do
     {
       System.out.println("Choose sauces for add at your icecream machine:\n1. Chocolate\n2. Caramel\n"
-              + "3. Pineapple\n4. Blackberry\n0. Salir");
+              + "3. Pineapple\n4. Blackberry\n0. Exit");
       opt = sc.nextInt();
       switch(opt){
         case 1: 
@@ -120,7 +120,7 @@ public class Client {
     do
     {
       System.out.println("Choose decorations for add at your icecream machine:\n1. Chiclets\n2. Sparks\n"
-              + "3. Chocolate Sparks\n0. Salir");
+              + "3. Chocolate Sparks\n0. Exit");
       opt = sc.nextInt();
       switch(opt){
         case 1: 
